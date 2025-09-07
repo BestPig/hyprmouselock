@@ -1,0 +1,12 @@
+[repository]
+name = "hyprmouselock"
+authors = ["BestPig"]
+
+[hyprmouselock]
+description = "Confines the cursor to the active window in Hyprland"
+authors = ["BestPig"]
+output = "build/libhyprmouselock.so"
+build = [
+	"cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -B build",
+	"cmake --build build"
+]
